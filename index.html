@@ -36,7 +36,98 @@
             </nav>
         </header>
         <main>
-            
+            <section class="banner">
+                <form class="booking-form">
+                    <fieldset>
+                        <legend>Planlegg reisen din:</legend>
+                        <label for="destination">Destinasjon</label>
+                        <input type="text" id="destination" placeholder="Skriv inn destinasjon">
+                        <label for="depart">Avreisedato</label>
+                        <input type="date" id="depart">
+                        <label for="return">Returdato</label>
+                        <input type="date" id="return">
+                        <button type="submit">Søk</button>
+                    </fieldset>
+                </form>
+            </section>
+    
+            <!-- Campaign Section -->
+            <section class="campaign">
+                <p>Bestill sommerens beste uke<br><span>Fly + hotell, 7 dager</span></p>
+                <a href="hotell.html" class="button">Bestill i dag</a>
+            </section>
+    
+            <!-- Deals Section -->
+            <section class="deals">
+                <article>
+                    <h3>Greske favoritter</h3>
+                    <p>Finn din drømmetur til Hellas.</p>
+                    <a href="#">Se tilbud &raquo;</a>
+                </article>
+                <article>
+                    <h3>Solskinnspriser</h3>
+                    <p>Bestill ferien i dag.</p>
+                    <a href="#">Utforsk mer &raquo;</a>
+                </article>
+                <article>
+                    <h3>Storbyferie</h3>
+                    <p>Oppdag nye eventyr i storbyer.</p>
+                    <a href="#">Utforsk reisemål &raquo;</a>
+                </article>
+            </section>
+    
+            <!-- Inspiration Section -->
+            <section class="inspiration">
+                <!-- Article with "Ukens Deal" Badge -->
+                <article>
+                    <span class="badge">Ukens Deal</span>
+                    <img src="images/deal.jpg" alt="Deal">
+                    <h3>Fantastiske tilbud</h3>
+                    <p>Fantastiske reisetilbud.</p>
+                    <a href="#">Se detaljer</a>
+                </article>
+    
+                <!-- Article with "Nyhet" Badge -->
+                <article>
+                    <span class="badge">Nyhet</span>
+                    <img src="images/nyhet.jpg" alt="Nyhet">
+                    <h3>Nyhet</h3>
+                    <p>Opplev noe nytt i år.</p>
+                    <a href="#">Utforsk nyheter</a>
+                </article>
+    
+                <!-- Article: Utforsk Hellas -->
+                <article>
+                    <img src="images/greece.jpg" alt="Greece">
+                    <h3>Utforsk Hellas</h3>
+                    <p>Oppdag strendene og øyene.</p>
+                    <a href="#">Les mer</a>
+                </article>
+    
+                <!-- Article: Storbyferie -->
+                <article>
+                    <img src="images/london.jpg" alt="London">
+                    <h3>Storbyferie</h3>
+                    <p>Gjør det meste ut av reisen din.</p>
+                    <a href="#">Les mer</a>
+                </article>
+    
+                <!-- Article: Oppdag Spania -->
+                <article>
+                    <img src="images/spain.jpg" alt="Spain">
+                    <h3>Oppdag Spania</h3>
+                    <p>Sol, sand og spennende kulturer.</p>
+                    <a href="#">Les mer</a>
+                </article>
+    
+                <!-- Article: Eksotiske Reiser -->
+                <article>
+                    <img src="images/tropical.jpg" alt="Tropical">
+                    <h3>Eksotiske reiser</h3>
+                    <p>Få drømmereisen til en fantastisk pris.</p>
+                    <a href="#">Utforsk tilbud</a>
+                </article>
+            </section>
         </main>
         <footer id="footer">
             <section class="countries">
@@ -59,9 +150,11 @@
             <section class="newsletter">
                 <h3>NYHETER & TILBUD</h3>
                 <form action="#">
-                    <label for="email">Meld deg på nyhetsbrev her</label>
-                    <input type="email" id="email" name="email" placeholder="ola@example.com">
-                    <button type="submit">Send</button>
+                    <fieldset>
+                        <legend for="email">Meld deg på nyhetsbrev her</legend>
+                        <input type="email" id="email" name="email" placeholder="ola@example.com">
+                        <button type="submit">Send</button>
+                    </fieldset>
                 </form>
                 <a href="#">Kjøp reisegavekort</a>
             </section>
