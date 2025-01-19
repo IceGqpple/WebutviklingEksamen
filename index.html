@@ -38,26 +38,52 @@
         <main>
             <section class="banner">
                 <form class="booking-form">
+                    <div class="tabs">
+                        <a href="#" class="active">Fly + Hotell</a>
+                        <a href="#">Fly</a>
+                        <a href="#">Storby</a>
+                        <a href="#">Ski</a>
+                        <a href="#">Kombinasjoner</a>
+                    </div>
                     <fieldset>
-                        <legend>Planlegg reisen din:</legend>
-                        <label for="destination">Destinasjon</label>
-                        <input type="text" id="destination" placeholder="Skriv inn destinasjon">
-                        <label for="depart">Avreisedato</label>
-                        <input type="date" id="depart">
-                        <label for="return">Returdato</label>
-                        <input type="date" id="return">
+                        <label for="from">Fra</label>
+                        <select id="from">
+                            <option>Oslo Lufthavn</option>
+                            <option>Bergen</option>
+                            <option>Trondheim</option>
+                        </select>
+                        <label for="to">Til</label>
+                        <select id="to">
+                            <option>Albania</option>
+                            <option>Spania</option>
+                            <option>Hellas</option>
+                        </select>
+                        <label for="duration">Reiselengde</label>
+                        <select id="duration">
+                            <option>Mindre enn 1 uke</option>
+                            <option>1 uke</option>
+                            <option>2 uker</option>
+                        </select>
+                        <label for="date">Velg dato</label>
+                        <input type="date" id="date" placeholder="mm/dd/yyyy">
+                        <label for="travelers">Antall reisende</label>
+                        <select id="travelers">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
                         <button type="submit">Søk</button>
                     </fieldset>
                 </form>
-            </section>
+            </section>            
     
-            <!-- Campaign Section -->
+            <!-- Campaign Section 
             <section class="campaign">
                 <p>Bestill sommerens beste uke<br><span>Fly + hotell, 7 dager</span></p>
                 <a href="hotell.html" class="button">Bestill i dag</a>
             </section>
-    
-            <!-- Deals Section -->
+
             <section class="deals">
                 <article>
                     <h3>Greske favoritter</h3>
@@ -75,10 +101,8 @@
                     <a href="#">Utforsk reisemål &raquo;</a>
                 </article>
             </section>
-    
-            <!-- Inspiration Section -->
+
             <section class="inspiration">
-                <!-- Article with "Ukens Deal" Badge -->
                 <article>
                     <span class="badge">Ukens Deal</span>
                     <img src="images/deal.jpg" alt="Deal">
@@ -87,7 +111,6 @@
                     <a href="#">Se detaljer</a>
                 </article>
     
-                <!-- Article with "Nyhet" Badge -->
                 <article>
                     <span class="badge">Nyhet</span>
                     <img src="images/nyhet.jpg" alt="Nyhet">
@@ -96,7 +119,6 @@
                     <a href="#">Utforsk nyheter</a>
                 </article>
     
-                <!-- Article: Utforsk Hellas -->
                 <article>
                     <img src="images/greece.jpg" alt="Greece">
                     <h3>Utforsk Hellas</h3>
@@ -104,7 +126,6 @@
                     <a href="#">Les mer</a>
                 </article>
     
-                <!-- Article: Storbyferie -->
                 <article>
                     <img src="images/london.jpg" alt="London">
                     <h3>Storbyferie</h3>
@@ -112,7 +133,6 @@
                     <a href="#">Les mer</a>
                 </article>
     
-                <!-- Article: Oppdag Spania -->
                 <article>
                     <img src="images/spain.jpg" alt="Spain">
                     <h3>Oppdag Spania</h3>
@@ -120,7 +140,6 @@
                     <a href="#">Les mer</a>
                 </article>
     
-                <!-- Article: Eksotiske Reiser -->
                 <article>
                     <img src="images/tropical.jpg" alt="Tropical">
                     <h3>Eksotiske reiser</h3>
@@ -128,6 +147,7 @@
                     <a href="#">Utforsk tilbud</a>
                 </article>
             </section>
+            -->
         </main>
         <footer id="footer">
             <section class="countries">
