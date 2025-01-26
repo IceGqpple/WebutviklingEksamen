@@ -36,45 +36,56 @@
             </nav>
         </header>
         <main>
-            <section class="banner">
+            <section class="header-main">
+                <div class ="background-banner"></div>
                 <form class="booking-form">
                     <div class="tabs">
-                        <a href="#" class="active">Fly + Hotell</a>
-                        <a href="#">Fly</a>
+                        <a href="#" class="active"><i class="fa-solid fa-suitcase"></i> Fly + Hotell</a>
+                        <a href="#"><i class="fa-solid fa-plane"></i>Fly</a>
                         <a href="#">Storby</a>
                         <a href="#">Ski</a>
                         <a href="#">Kombinasjoner</a>
                     </div>
-                    <fieldset>
-                        <label for="from">Fra</label>
-                        <select id="from">
-                            <option>Oslo Lufthavn</option>
-                            <option>Bergen</option>
-                            <option>Trondheim</option>
-                        </select>
-                        <label for="to">Til</label>
-                        <select id="to">
-                            <option>Albania</option>
-                            <option>Spania</option>
-                            <option>Hellas</option>
-                        </select>
-                        <label for="duration">Reiselengde</label>
-                        <select id="duration">
-                            <option>Mindre enn 1 uke</option>
-                            <option>1 uke</option>
-                            <option>2 uker</option>
-                        </select>
-                        <label for="date">Velg dato</label>
-                        <input type="date" id="date" placeholder="mm/dd/yyyy">
-                        <label for="travelers">Antall reisende</label>
-                        <select id="travelers">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
+                    <div class="booking">
+                        <fieldset class="travelfrom">
+                            <legend>Fra</legend>
+                            <select id="from">
+                                <option>Oslo Lufthavn</option>
+                                <option>Bergen</option>
+                                <option>Trondheim</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="travelto">
+                            <legend>Til</legend>
+                            <select id="to">
+                                <option>Albania</option>
+                                <option>Spania</option>
+                                <option>Hellas</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="travellength">
+                            <legend>Reiselengde</legend>
+                            <select id="duration">
+                                <option>Mindre enn 1 uke</option>
+                                <option>1 uke</option>
+                                <option>2 uker</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="traveldate">
+                            <legend>Velg dato</legend>
+                            <input type="date" id="date" placeholder="mm/dd/yyyy">
+                        </fieldset>
+                        <fieldset class="passengers">
+                            <legend>Antall reisende</legend>
+                            <select id="travelers">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </fieldset>
+                    </div>
                         <button type="submit">Søk</button>
-                    </fieldset>
                 </form>
             </section>            
     
