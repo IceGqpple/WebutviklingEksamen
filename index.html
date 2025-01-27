@@ -41,10 +41,10 @@
                 <form class="booking-form">
                     <div class="tabs">
                         <a href="#" class="active"><i class="fa-solid fa-suitcase"></i> Fly + Hotell</a>
-                        <a href="#"><i class="fa-solid fa-plane"></i>Fly</a>
-                        <a href="#">Storby</a>
-                        <a href="#">Ski</a>
-                        <a href="#">Kombinasjoner</a>
+                        <a href="#"><i class="fa-solid fa-plane"></i> Fly</a>
+                        <a href="#"><i class="fa-solid fa-city"></i> Storby</a>
+                        <a href="#"><i class="fa-solid fa-person-skiing"></i> Ski</a>
+                        <a href="#"><i class="fa-solid fa-map-location-dot"></i> Kombinasjoner</a>
                     </div>
                     <div class="booking">
                         <fieldset class="travelfrom">
@@ -77,88 +77,82 @@
                         </fieldset>
                         <fieldset class="passengers">
                             <legend>Antall reisende</legend>
-                            <select id="travelers">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
+                            <input type="number" id="travelers" min="1" max="10" value="1">
                         </fieldset>
                     </div>
                         <button type="submit">Søk</button>
                 </form>
             </section>            
     
-            <!-- Campaign Section 
-            <section class="campaign">
-                <p>Bestill sommerens beste uke<br><span>Fly + hotell, 7 dager</span></p>
-                <a href="hotell.html" class="button">Bestill i dag</a>
+            <section class="campaign-section">
+                <article class="campaign-content">
+                    <h1>Bestill sommerens beste uke</h1>
+                    <p>Fly + hotell, 7 dager</p>
+                    <p class="price">Fra 3 298,–</p>
+                </article>
+                <a href="hotell.html">Bestill i dag</a>
+            </section>
+            
+            <section class="offers-section">
+                <article class="offer-card">
+                    <h2>Få eksklusive tilbud</h2>
+                    <a href="#">Logg inn/opprett konto og få rabattkoder &raquo;</a>
+                </article>
+                <article class="offer-card">
+                    <h2>Billige restplasser</h2>
+                    <a href="#">Opptil 50% rabatt &raquo;</a>
+                </article>
+                <article class="offer-card">
+                    <h2>Mars - spar opptil 5000,-</h2>
+                    <a href="#">Sikre deg et feriekupp &raquo;</a>
+                </article>
             </section>
 
-            <section class="deals">
-                <article>
-                    <h3>Greske favoritter</h3>
-                    <p>Finn din drømmetur til Hellas.</p>
-                    <a href="#">Se tilbud &raquo;</a>
+            <section class="tips-section">
+                <article class="card">
+                    <div class="label">Ukens Deal</div>
+                    <img src="img/beach-6514331_640.jpg" alt="Greske favoritter">
+                    <h2>Greske favoritter</h2>
+                    <p>Akkurat nå får du 1 000,– i rabatt per bestilling til bl.a. Parga, Sivota, Lefkas, Korfu og Kalamata i Hellas. Gjelder avganger i sommer 2025. Kampanjen er gyldig i perioden 3/1 - 12/1-2025. Bruk rabattkoden WEEKDEAL ved bestilling.</p>
+                    <a href="#">Fra kr 3 970 &rarr;</a>
                 </article>
-                <article>
-                    <h3>Solskinnspriser</h3>
-                    <p>Bestill ferien i dag.</p>
-                    <a href="#">Utforsk mer &raquo;</a>
-                </article>
-                <article>
-                    <h3>Storbyferie</h3>
-                    <p>Oppdag nye eventyr i storbyer.</p>
-                    <a href="#">Utforsk reisemål &raquo;</a>
-                </article>
-            </section>
 
-            <section class="inspiration">
-                <article>
-                    <span class="badge">Ukens Deal</span>
-                    <img src="images/deal.jpg" alt="Deal">
-                    <h3>Fantastiske tilbud</h3>
-                    <p>Fantastiske reisetilbud.</p>
-                    <a href="#">Se detaljer</a>
+                <article class="card">
+                    <img src="img/beach-1836467_640.jpg" alt="Solskinnspriser">
+                    <h2>Solskinnspriser – bestill i dag!</h2>
+                    <p>Spar opptil 45%. Akkurat nå tilbyr vi billige vinterreiser til mange reisemål. Bestill vinterens herligste uke i dag!</p>
+                    <a href="#">Fra kr 3 203 &rarr;</a>
                 </article>
-    
-                <article>
-                    <span class="badge">Nyhet</span>
-                    <img src="images/nyhet.jpg" alt="Nyhet">
-                    <h3>Nyhet</h3>
-                    <p>Opplev noe nytt i år.</p>
-                    <a href="#">Utforsk nyheter</a>
+
+                <article class="card">
+                    <img src="img/cathedral-427997_640.jpg" alt="Storbyferie">
+                    <h2>Storbyferie</h2>
+                    <p>Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reiselengde, fly og nøye utvalgte hotell.</p>
+                    <a href="#">Les mer &rarr;</a>
                 </article>
-    
-                <article>
-                    <img src="images/greece.jpg" alt="Greece">
-                    <h3>Utforsk Hellas</h3>
-                    <p>Oppdag strendene og øyene.</p>
-                    <a href="#">Les mer</a>
+
+                <article class="card">
+                    <img src="img/building-7014904_640.jpg" alt="London">
+                    <h2>Besøk påskefavoritten London</h2>
+                    <p>London er en av de mest populære reisemålene i påsken, kjent for sin unike blanding av historie, kultur og moderne opplevelser.</p>
+                    <a href="#">Fra kr 2 150 &rarr;</a>
                 </article>
-    
-                <article>
-                    <img src="images/london.jpg" alt="London">
-                    <h3>Storbyferie</h3>
-                    <p>Gjør det meste ut av reisen din.</p>
-                    <a href="#">Les mer</a>
+
+                <article class="card">
+                    <div class="label">Nyhet</div>
+                    <img src="img/ski-slope-3223709_640.jpg" alt="Skiferie">
+                    <h2>Skiferie</h2>
+                    <p>Drømmer du om puddersnø, frisk fjelluft og fartsfylte nedfarter? Vinteren er endelig her, og det betyr at skisesongen er i full gang!</p>
+                    <a href="#">Se alle skistedene &rarr;</a>
                 </article>
-    
-                <article>
-                    <img src="images/spain.jpg" alt="Spain">
-                    <h3>Oppdag Spania</h3>
-                    <p>Sol, sand og spennende kulturer.</p>
-                    <a href="#">Les mer</a>
+
+                <article class="card">
+                    <img src="img/beach-666122_640.jpg" alt="Sommerdrøm">
+                    <h2>Spar opptil 7000,- til sommer</h2>
+                    <p>Drømmer du om solfylte dager og eksotiske opplevelser? Nå har du sjansen til å sikre deg din drømmeferie til en fantastisk pris!</p>
+                    <a href="#">Les mer &rarr;</a>
                 </article>
-    
-                <article>
-                    <img src="images/tropical.jpg" alt="Tropical">
-                    <h3>Eksotiske reiser</h3>
-                    <p>Få drømmereisen til en fantastisk pris.</p>
-                    <a href="#">Utforsk tilbud</a>
-                </article>
-            </section>
-            -->
+            </section>        
         </main>
         <footer id="footer">
             <section class="countries">

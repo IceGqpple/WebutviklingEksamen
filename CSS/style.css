@@ -47,10 +47,6 @@ nav div {
     font-size: 25px;
 }
 
-.hidepc {
-    
-}
-
 .menu {
     position: relative;
     display: inline-block;
@@ -90,14 +86,14 @@ nav div {
 }
 
 .header-main {
-    height: 400px;
+    height: 350px;
     width: 100%;
     max-width: 1400px;
     display: grid;
     justify-items: center;
     grid-template-rows: repeat(4, 2fr);
     grid-template-columns: 1fr;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 .background-banner {
@@ -119,14 +115,19 @@ nav div {
     font-size: 10px;
     background-color: white;
     grid-column: 1 / -1;
-    grid-row: 2 / 4;
+    grid-row: 2 / 5;
     align-self: center;
 }
 
 .booking-form .tabs {
     display: flex;
     margin-bottom: 10px;
-    overflow-x: scroll;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    width: 100%;
+    white-space: nowrap;
 }
 
 .booking-form .tabs a {
@@ -134,11 +135,12 @@ nav div {
     font-weight: bold;
     font-size: 10px;
     color: #666;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border-bottom: 2px solid transparent;
     transition: color 0.3s, border-bottom 0.3s;
-    max-width: 40px;
-    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    flex: 0 0 auto;
 }
 
 .booking-form .tabs a.active {
@@ -154,42 +156,66 @@ nav div {
 .booking {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    gap: 15px;
 }
 
-.travelfrom {
-    width: 100%;
+.booking-form .travelfrom {
+    width: 95%;
+    margin-top: 5px;
 }
 
 .travelto {
-    width: 100%;
+    width: 95%;
 }
 
-.travellength {
-    width: 40%;
+.booking-form .travellength {
+    width: 45%;
+    margin-left: 6px;
 }
 
-.traveldate {
-    width: 40%;
+.booking-form .traveldate {
+    width: 45%;
+    margin-right: 5px;
 }
 
-.passengers {
-    width: 100%;
+.booking-form .passengers {
+    width: 95%;
+    margin-bottom: 10px;
 }
 
-.booking-form label {
-    font-weight: bold;
-    font-size: 0.85em;
-    margin-bottom: 5px;
-    display: block;
+.booking-form fieldset {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    box-sizing: border-box;
 }
 
-.booking-form select, .booking-form input {
+.booking-form fieldset legend {
+    font-size: 10px;
+    background-color: #fff;
+    padding: 0 5px;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+}
+
+.booking-form select,
+.booking-form input {
+    color: #666;
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: none;
+    outline: none;
     font-size: 10px;
-    background-color: #f9f9f9;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0;
+    gap: 10px;
 }
 
 .booking-form input[type="date"] {
@@ -217,147 +243,162 @@ nav div {
     background-color: #e6b800;
 }
 
-.campaign {
-    background-color: #52d3f0;
-    text-align: center;
-    padding: 50px 20px;
-    color: white;
-    margin-top: 70px;
+.campaign-section {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url('../img/holiday-2733322_1280.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.campaign p {
-    font-size: 1.2em;
+.campaign-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 180, 255);
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    color: black;
+    max-width: 90%;
+}
+
+.campaign-content h1 {
+    font-size: 20px;
+    margin: 0;
     font-weight: bold;
-    margin-bottom: 10px;
-    line-height: 1.4;
 }
 
-.campaign span {
-    display: block;
-    font-size: 1em;
-    margin-top: 5px;
+.campaign-content p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
-.campaign .button {
-    background-color: #019101;
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
+.campaign-content .price {
+    font-size: 25px;
+    font-weight: 1000;
+    margin: 0;
+}
+
+.campaign-section a {
     display: inline-block;
     margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #ffc107;
+    color: #000;
+    font-weight: 1000;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 206px;
 }
 
-/* Deals Section */
-.deals {
-    margin-top: 20px;
-    width: 90%;
+.offers-section {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 15px;
+    padding-left: 25px;
+    max-width: 100vw;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.offer-card {
+    flex: 0 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.offer-card h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.offer-card a {
+    font-size: 12px;
+    color: #0078D4; 
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.tips-section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
 }
 
-.deals article {
-    background: white;
-    border: 1px solid #e8e8e8;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.deals h3 {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.deals p {
-    font-size: 0.9em;
-    margin-bottom: 10px;
-    line-height: 1.4;
-    color: #555;
-}
-
-.deals a {
-    color: #1ca2c1;
-    text-decoration: none;
-    font-size: 0.9em;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-}
-
-.deals a::after {
-    content: " »";
-    font-size: 1em;
-}
-
-/* Inspiration Section */
-.inspiration {
-    margin-top: 20px;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.inspiration article {
-    position: relative;
-    background-color: white;
-    border: 1px solid #e8e8e8;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
-.inspiration img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.inspiration h3 {
-    font-size: 1em;
-    font-weight: bold;
-    padding: 10px;
-}
-
-.inspiration p {
-    font-size: 0.9em;
-    color: #555;
-    padding: 0 10px;
-    line-height: 1.4;
-    margin-bottom: 10px;
-}
-
-.inspiration a {
-    color: #1ca2c1;
-    text-decoration: none;
-    font-size: 0.9em;
-    font-weight: bold;
-    padding: 10px;
-    display: block;
-}
-
-/* Badge Styling */
-.badge {
+.card .label {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #019101;
-    color: white;
-    font-size: 0.8em;
-    padding: 5px 10px;
-    border-radius: 3px;
-    text-transform: uppercase;
+    background-color: #00a7c0;
+    color: #fff;
+    font-size: 12px;
     font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1;
 }
-.badge.nyhet {
-    background-color: #1ca2c1;
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 15px 20px;
+}
+
+.card p {
+    margin: 10px 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.card a {
+    margin: 10px 20px 20px;
+    font-size: 14px;
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer {
@@ -446,15 +487,13 @@ footer {
     width: 100px;
     border: 1px solid #ffffff;
     border-radius: 4px;
-    background-color: #333333;
-    color: #ffffff;
+    background-color: white;
     margin: 8px 0px;
 }
   
 .newsletter input[type="email"]::placeholder {
-    color: #ffffff88;
-    opacity: 0.8;
-    font-size: 8px;
+    color: rgba(0, 0, 0, 0.562);
+    font-size: 10px;
 }
   
 .newsletter button {
