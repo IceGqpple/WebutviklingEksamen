@@ -258,12 +258,12 @@ header {
     flex-direction: column;
     justify-content: center;
     background-color: rgba(0, 180, 255);
-    height: 150px;
+    height: 130px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0 20px 0 20px;
     text-align: left;
     color: black;
-    max-width: 90%;
+    max-width: 70%;
 }
 
 .campaign-content h2 {
