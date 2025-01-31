@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/solid.css">
     <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/fontawesome.css">
     <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/brands.css">
     <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/regular.css">
-    <title>Forside</title>
+    <title>Suntravels</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
 </head>
     <body>
         <header>
             <a href="index.html" id="logo">
-                <img src="img/fav.png">
+                <img src="img/fav.png" alt="Sun logo">
             </a>
-            <nav>
-                <a href="order.html"><i class="fa-solid fa-search"></i></a>
+            <nav class="headernav">
+                <a href=""><i class="fa-solid fa-search"></i></a>
                 <a href="" class="user">
                     <i class="fa-regular fa-circle-user"></i> 
                     <span class="hidephone">Min Side</span>
                 </a>
-                <div class="menu">
+                <nav class="menu">
                     <span class="hidepc"><i class="fa-solid fa-bars"></i></span>
-                    <span class="dropdown">
+                    <nav class="dropdown">
                         <a href="">Opprett en konto</a>
                         <ul>
                             <li><a href="#tips">Tips og inspirasjon</a></li>
@@ -31,21 +32,21 @@
                             <li><a href="https://www.norwegian.no/">Fly</a></li>
                             <li><a href="#footer">Kontakt</a></li>
                         </ul>
-                    </span>
-                </div>
+                    </nav>
+                </nav>
             </nav>
         </header>
         <main>
             <section class="header-main">
                 <div class ="background-banner"></div>
-                <form class="booking-form">
-                    <div class="tabs">
+                <form id="booking-form">
+                    <nav class="tabs">
                         <a href="#" class="active"><i class="fa-solid fa-suitcase"></i> Fly + Hotell</a>
                         <a href="#"><i class="fa-solid fa-plane"></i> Fly</a>
                         <a href="#"><i class="fa-solid fa-city"></i> Storby</a>
                         <a href="#"><i class="fa-solid fa-person-skiing"></i> Ski</a>
                         <a href="#"><i class="fa-solid fa-map-location-dot"></i> Kombinasjoner</a>
-                    </div>
+                    </nav>
                     <div class="booking">
                         <fieldset class="travelfrom">
                             <legend>Fra</legend>
@@ -73,7 +74,7 @@
                         </fieldset>
                         <fieldset class="traveldate">
                             <legend>Velg dato</legend>
-                            <input type="date" id="date" placeholder="mm/dd/yyyy">
+                            <input type="date" id="date">
                         </fieldset>
                         <fieldset class="passengers">
                             <legend>Antall reisende</legend>
@@ -86,11 +87,11 @@
     
             <section class="campaign-section">
                 <article class="campaign-content">
-                    <h1>Bestill sommerens beste uke</h1>
+                    <h2>Bestill sommerens beste uke</h2>
                     <p>Fly + hotell, 7 dager</p>
                     <p class="price">Fra 3 298,–</p>
                 </article>
-                <a href="hotell.html">Bestill i dag</a>
+                <a href="order.html">Bestill i dag</a>
             </section>
             
             <section class="offers-section">
@@ -110,47 +111,47 @@
 
             <section class="tips-section">
                 <article class="card">
-                    <div class="label">Ukens Deal</div>
+                    <label class="label">Ukens Deal</label>
                     <img src="img/beach-6514331_640.jpg" alt="Greske favoritter">
                     <h2>Greske favoritter</h2>
                     <p>Akkurat nå får du 1 000,– i rabatt per bestilling til bl.a. Parga, Sivota, Lefkas, Korfu og Kalamata i Hellas. Gjelder avganger i sommer 2025. Kampanjen er gyldig i perioden 3/1 - 12/1-2025. Bruk rabattkoden WEEKDEAL ved bestilling.</p>
-                    <a href="#">Fra kr 3 970 &rarr;</a>
+                    <a href="hotell.html">Fra kr 3 970 <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
 
                 <article class="card">
                     <img src="img/beach-1836467_640.jpg" alt="Solskinnspriser">
                     <h2>Solskinnspriser – bestill i dag!</h2>
                     <p>Spar opptil 45%. Akkurat nå tilbyr vi billige vinterreiser til mange reisemål. Bestill vinterens herligste uke i dag!</p>
-                    <a href="#">Fra kr 3 203 &rarr;</a>
+                    <a href="hotell.html">Fra kr 3 203 <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
 
                 <article class="card">
                     <img src="img/cathedral-427997_640.jpg" alt="Storbyferie">
                     <h2>Storbyferie</h2>
                     <p>Bestill en langhelg og unn deg en flott weekendreise i en storby der du selv velger reiselengde, fly og nøye utvalgte hotell.</p>
-                    <a href="#">Les mer &rarr;</a>
+                    <a href="hotell.html">Les mer <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
 
                 <article class="card">
                     <img src="img/building-7014904_640.jpg" alt="London">
                     <h2>Besøk påskefavoritten London</h2>
                     <p>London er en av de mest populære reisemålene i påsken, kjent for sin unike blanding av historie, kultur og moderne opplevelser.</p>
-                    <a href="#">Fra kr 2 150 &rarr;</a>
+                    <a href="hotell.html">Fra kr 2 150 <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
 
                 <article class="card">
-                    <div class="label">Nyhet</div>
+                    <label class="label">Nyhet</label>
                     <img src="img/ski-slope-3223709_640.jpg" alt="Skiferie">
                     <h2>Skiferie</h2>
                     <p>Drømmer du om puddersnø, frisk fjelluft og fartsfylte nedfarter? Vinteren er endelig her, og det betyr at skisesongen er i full gang!</p>
-                    <a href="#">Se alle skistedene &rarr;</a>
+                    <a href="hotell.html">Se alle skistedene <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
 
                 <article class="card">
                     <img src="img/beach-666122_640.jpg" alt="Sommerdrøm">
                     <h2>Spar opptil 7000,- til sommer</h2>
                     <p>Drømmer du om solfylte dager og eksotiske opplevelser? Nå har du sjansen til å sikre deg din drømmeferie til en fantastisk pris!</p>
-                    <a href="#">Les mer &rarr;</a>
+                    <a href="hotell.html">Les mer <i class="fa-solid fa-arrow-right"></i></a>
                 </article>
             </section>        
         </main>
@@ -176,7 +177,7 @@
                 <h3>NYHETER & TILBUD</h3>
                 <form action="#">
                     <fieldset>
-                        <legend for="email">Meld deg på nyhetsbrev her</legend>
+                        <legend>Meld deg på nyhetsbrev her</legend>
                         <input type="email" id="email" name="email" placeholder="ola@example.com">
                         <button type="submit">Send</button>
                     </fieldset>
